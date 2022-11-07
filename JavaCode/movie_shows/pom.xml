@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.bookmymovie</groupId>
 	<artifactId>movie_shows</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>movie_shows</name>
 	<description>project for movie shows management</description>
 	<properties>
