@@ -18,7 +18,7 @@ public class MovieBookingsController {
     MovieBookingService movieBookingsService;
 
     @PostMapping(value = "/movie-bookings")
-    public ResponseEntity<BookMovieTicketResponse> bookMovieTickets(BookMovieTicketRequest bookMovieTicketRequest){
+    public ResponseEntity<BookMovieTicketResponse> bookMovieTickets(BookMovieTicketRequest bookMovieTicketRequest) throws Exception {
         return ResponseEntity.ok(movieBookingsService.bookTickets(bookMovieTicketRequest));
 
     }

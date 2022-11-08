@@ -1,4 +1,4 @@
-package com.bookmymovie.movie_bookings.entities;
+package com.bookmymovie.movie_shows.entities;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -11,7 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonProperty;

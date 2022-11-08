@@ -19,4 +19,6 @@ public class SeatMapMatrix {
     private String status;
     @ManyToOne
     private SeatMap seatMap;
+    @OneToOne(mappedBy = "seatMatrix")
+    private MovieSubBooking movieSubBooking;
 }

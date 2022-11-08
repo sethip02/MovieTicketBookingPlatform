@@ -1,22 +1,28 @@
 package com.bookmymovie.movie_shows.entities;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import lombok.Data;
+
 @Entity
 @Table(name="seat_map")
+@Data
 public class SeatMap {
     @Id
     private int id;
     @OneToOne
     @JoinColumn( name = "movieshow_id", referencedColumnName = "id")
     private MovieShow movieShow;
-    @OneToOne
+    @OneToMany
     @JoinColumn( name = "seatmap_id", referencedColumnName = "id")
-    private SeatMapMatrix seatMapMatrix;
+    private List<SeatMapMatrix> seatMapMatrix;
 
 
 }
